@@ -1,0 +1,15 @@
+# import * from './generated/prisma.graphql'
+
+
+type God {
+  power: String
+}
+
+type Mutation {
+  generateGod(power: String!) : God
+  
+}
+
+type Query {
+  gods: [God]!
+}
